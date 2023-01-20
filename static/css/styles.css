@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background: rgb(250,2,60);
+    background: linear-gradient(90deg, rgba(250,2,60,1) 0%, rgba(25,156,217,1) 35%, rgba(250,2,60,1) 100%);
+}
+
+header {
+    display: flex;
+    height: 11vh;
+    background: #000;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #fa023c;
+}
+
+header img {
+    height: 85%;
+}
+
+header h3 {
+    font-family: 'Cookie', cursive;
+    font-size: 30pt;
+    color: #fa023c;
+}
+
+main {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+main div {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+}
+
+main textarea {
+    font-size: 12pt;
+    width: 80%;
+    height: 90%;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    border: 2px solid #199cd9;
+}
+
+.translator {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+footer {
+    margin: auto;
+    padding: 1% 0px;
+    color: #fa023c;
+    background-color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    header img {
+        height: 75%;
+    }
+    header h3 {
+        font-size: 25pt;
+    }
+    main {
+        flex-direction: column;
+    }
+    main div {
+        height: 42vh;
+    }
+}
